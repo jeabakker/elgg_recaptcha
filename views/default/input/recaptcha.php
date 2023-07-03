@@ -35,15 +35,15 @@ $options = array(
 	'data-type' => get_recaptcha_type()
 );
 
-if ($vars['theme']) {
+if (isset($vars['theme'])) {
 	$options['data-theme'] = $vars['theme'];
 }
 
-if ($vars['size']) {
+if (isset($vars['size'])) {
 	$options['data-size'] = $vars['size'];
 }
 
-if ($vars['type']) {
+if (isset($vars['type'])) {
 	$options['data-type'] = $vars['type'];
 }
 
