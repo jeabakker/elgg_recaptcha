@@ -34,7 +34,7 @@ function get_browsers() {
 		return $browsers;
 	}
 	
-	$refl = new \ReflectionClass('Wolfcast\BrowserDetection');
+	$refl = new \ReflectionClass('BrowserDetection');
 	$constants = $refl->getConstants();
 	
 	$browsers = array();
@@ -59,7 +59,7 @@ function get_platforms() {
 		return $platforms;
 	}
 	
-	$refl = new \ReflectionClass('Wolfcast\BrowserDetection');
+	$refl = new \ReflectionClass('BrowserDetection');
 	$constants = $refl->getConstants();
 	
 	$platforms = array();
@@ -78,7 +78,7 @@ function get_platforms() {
  * get the current users platform
  */
 function get_platform($label = true) {
-	$browser = new \Wolfcast\BrowserDetection();
+	$browser = new \BrowserDetection();
 	
 	$l = $browser->getPlatform();
 	
@@ -95,7 +95,7 @@ function get_platform($label = true) {
  * get the current users browser
  */
 function get_browser($label = true) {
-	$browser = new \Wolfcast\BrowserDetection();
+	$browser = new \BrowserDetection();
 	
 	$l = $browser->getName();
 	
